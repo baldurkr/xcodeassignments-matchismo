@@ -29,6 +29,19 @@
         }
         
     }
+    if([otherCards count] == 2)
+    {
+        PlayingCard* firstCard = [otherCards firstObject];
+        PlayingCard* secondCard = [otherCards lastObject];
+        if(self.suit == firstCard.suit && self.suit == secondCard.suit)
+        {
+            score = 2;
+        }
+        else if(self.rank == firstCard.rank && self.rank == secondCard.rank)
+        {
+            score = 8;
+        }
+    }
     
     return score;
 }

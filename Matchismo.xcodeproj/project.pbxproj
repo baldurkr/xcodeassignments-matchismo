@@ -128,10 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				CF196B2A18EB7B6400E9A87A /* Main.storyboard */,
-				CF196B5A18F2C94800E9A87A /* CardMatchingGame.h */,
-				CF196B5B18F2C94800E9A87A /* CardMatchingGame.m */,
-				CF196B2D18EB7B6400E9A87A /* CardGameViewController.h */,
-				CF196B2E18EB7B6400E9A87A /* CardGameViewController.m */,
+				F5F2EF1418FD430E00A6551D /* Controllers */,
 				CF196B3018EB7B6400E9A87A /* Images.xcassets */,
 				CF196B1F18EB7B6400E9A87A /* Supporting Files */,
 				CF196B5918F0A70A00E9A87A /* Models */,
@@ -173,6 +170,8 @@
 		CF196B5918F0A70A00E9A87A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CF196B5A18F2C94800E9A87A /* CardMatchingGame.h */,
+				CF196B5B18F2C94800E9A87A /* CardMatchingGame.m */,
 				CF196B4D18F06A4800E9A87A /* Card.h */,
 				CF196B4E18F06A4800E9A87A /* Card.m */,
 				CF196B5018F06A6600E9A87A /* PlayingCard.h */,
@@ -183,6 +182,15 @@
 				CF196B5718F06AA400E9A87A /* PlayingCardDeck.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		F5F2EF1418FD430E00A6551D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF196B2D18EB7B6400E9A87A /* CardGameViewController.h */,
+				CF196B2E18EB7B6400E9A87A /* CardGameViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,10 +423,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -428,10 +438,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchismo/Matchismo-Prefix.pch";
 				INFOPLIST_FILE = "Matchismo/Matchismo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -495,6 +507,7 @@
 				CF196B4918EB7B6400E9A87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF196B4A18EB7B6400E9A87A /* Build configuration list for PBXNativeTarget "MatchismoTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +516,7 @@
 				CF196B4C18EB7B6400E9A87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,6 +16,9 @@
 -(Card *)cardAtIndex:(NSUInteger)index;
 
 @property (nonatomic, readonly) NSInteger score;
+@property (nonatomic) BOOL threeCardMatch; //YES if in three-card mode
+@property (nonatomic, readonly) NSArray *lastMatchAttempt;
+@property (nonatomic, readonly) int lastMatchScore;
 
 
 @end
